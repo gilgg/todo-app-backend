@@ -3,15 +3,6 @@ const User = require("../models/user");
 const auth = require("../middleware/auth");
 const router = express.Router();
 
-router.get("/api/users", async (req, res) => {
-  try {
-    const users = await User.find();
-    res.send(users);
-  } catch (err) {
-    res.status(500).send();
-  }
-});
-
 router.post("/api/users/signup", async (req, res) => {
   const user = new User(req.body);
 
@@ -50,6 +41,15 @@ router.post("/api/users/logout", auth, async (req, res) => {
 
 router.get("/api/users/me", auth, async (req, res) => {
   res.send(req.user);
+});
+
+router.delete("/api/users/me", auth, async (req, res) => {
+  try {
+    await User.findByIdAndDelete(req.user._id.toString());
+    res.send(req.user);
+  } catch (error) {
+    res.status(500).send();
+  }
 });
 
 module.exports = router;
