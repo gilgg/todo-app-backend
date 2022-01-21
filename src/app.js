@@ -17,6 +17,7 @@ app.use("/*", (req, res, next) => {
   res.sendFile(path.resolve(__dirname, "public", "index.html"));
 });
 
-app.listen(process.env.PORT, () => {
-  console.log("server is up on port 5000");
-});
+// app.listen(process.env.PORT || 5000, () => {
+//   console.log("server is up on port 5000");
+// });
+app.listen(process.env.PORT || 5000);
