@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(todoRouter);
 app.use(userRouter);
 
-app.use("*", (req, res, next) => {
+app.use("/*", (req, res, next) => {
   res.sendFile(path.resolve(__dirname, "public", "index.html"));
 });
 
