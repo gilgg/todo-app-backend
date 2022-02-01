@@ -45,15 +45,15 @@ The Todo App lets you handle your day better and achieve all of your daily todos
 
 # Screenshots 🎮
 
-![Todo Login](https://i.ibb.co/GWY0tKY/todo-1.png)
+![Todo Login](https://i.ibb.co/Kjy2Qrh/todo-1.png)
 
 <br />
 
-![Todo Dark Mode](https://i.ibb.co/5rDGG6S/todo-2.png)
+![Todo Dark Mode](https://i.ibb.co/hy7dH5n/todo-2.png)
 
 <br />
 
-![Todo No Dark Mode](https://i.ibb.co/YNGZZXB/todo-3.png)
+![Todo No Dark Mode](https://i.ibb.co/8dYZy6T/todo-3.png)
 
 <br />
 
